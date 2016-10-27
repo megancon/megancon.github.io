@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset = "utf-8">
+	 <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection"/>
+	<!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+	<link rel = 'stylesheet' href = '../css/style.css'>
+	<link rel = 'stylesheet' href = '../css/projects.css'>
+	<link rel='stylesheet' href='../css/font-awesome.min.css'>
+
+	<title>Megan Conlon</title>
+</head>
+
+<body>
+	<!-- <div class="mobile-menu">
+		<nav>
+			<ul>
+				<li><a class="active" data-nav="projects">Selected Work</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a data-nav="contact">Contact me</a></li>
+			</ul>
+		</nav>
+		<div class="mobile-icon">
+			<i class="fa fa-bars"></i>
+		</div> -->
+	</div>
+	<nav>
+		<div class="nav-wrapper">
+			<a href="../index.html#" class="name-logo">Megan Conlon</a>
+			<ul id="nav-mobile" class="right hide-on-med-and-down">
+			    <li><a href="../index.html#about" class = "about-tag">About</a></li>
+			    <li><a href="../index.html#projects">Projects</a></li>
+			    <li><a href="../index.html#blog">Blog</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class = "intro" id = "intro">
+		<div class = "top_img"><img src = "../images/unsplash-code.jpeg"></div>
+		<h1>Artificial Intelligence Programming</h1>
+		<h2>Northwestern University</h2>
+		<p>Series of projects that my team developed for an artificial intelligence course under the instruction of Professor Sara Sood.</p>
+		<h3>Skills</h3>
+		<p>Python Programming, Artificial Intelligence Algorithms</p>
+	</section>
+	<section class = "projects" id = "mancala">
+		<h3>Mancala Bot</h3>
+		<p>We implemented the alpha-beta pruning search algorithm and developed a game board evaluator to create efficient and artificially intelligent game players.</p>
+		<div class = "mancala_img"><img src = "../images/mancala.png"></div>
+	</section>
+	<section class = "projects" id = "sudoku">
+		<h3>Sudoku Bot</h3>
+		<p>In order to solve sudoku puzzles of varying sizes and difficulties, we wrote a constraint satisfaction problem solver that utilized back and forward checking and other heuristics (minimum remaining values, degree, least constraining value).</p>
+		<div class = "sudoku_img"><img src = "../images/sudoku.png"></div>
+	<section class = "projects" id = "sent_analysis">
+		<h3>Sentiment Analysis</h3>
+		<p>My team developed a Naïve Bayes Classifier that analyzed the sentiment expressed in text. The classifier was trained and tested on a corpus of movie reviews. When a short selection of text was inputted, it returned whether the selection was positive, negative, or neutral.</p>
+		<div class = "bayes_img"><img src = "../images/bayes.png"></div>
+	</section>
+	<section class = "projects" id = "sketch_rec">
+		<h3>Sketch Recognition</h3>
+		<p>For this project, we applied our knowledge of Hidden Markov Models to develop a system that could distinguish between text and graphics in a sketch. We used the Viterbi Algorithm to determine the most likely sequence of labels (drawing or text) based on stroke length, stroke speed, and stroke curvature from a series of pen strokes. To calculate the accuracy of our classifier, we created a confusion matrix to calculate and compare how different strokes were classified, given their true labels.</p>
+		<div class = "sketch_img"><img src = "../images/sketchrec.png"></div>
+	</section>
+	<section class = "projects">
+		<p>You can check out the whole project on github <a href= "https://github.com/megancon/348assignments">here</a>.</p>
+	</section>
+	
+
+
+    <footer class="footer">
+        <ul class = "contact">
+			<li><a href = 'mailto: meganconlon2018@u.northwestern.edu' target = '_blank'<i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+			<li><a href='https://github.com/megancon' target = '_blank'<i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+			<li><a href='http://www.linkedin.com' target = '_blank'<i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+		</ul>
+		<div class="copyright">Designed &amp; Developed by Megan Conlon ©2016</div>
+	</footer>
+
+
+<script src="../js/jquery.js"></script>
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+* {
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  border: 0; }
+
+body {
+  font-family: "Montserrat", sans-serif; }
+  body nav {
+    background: linear-gradient(to bottom, #9c9c97, transparent); }
+    body nav .name-logo {
+      color: #EE3A8C;
+      font-size: 25px;
+      padding-left: 2%; }
+      body nav .name-logo:hover {
+        opacity: 0.5; }
+  body .sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0; }
+  body .music_intro {
+    text-align: center; }
+    body .music_intro h1 {
+      font-size: 35px; }
+    body .music_intro h2 {
+      font-size: 20px; }
+    body .music_intro h3 {
+      font-size: 30px; }
+  body .paris_intro {
+    text-align: center; }
+    body .paris_intro h1 {
+      font-size: 35px; }
+    body .paris_intro h2 {
+      font-size: 20px; }
+    body .paris_intro h3 {
+      font-size: 30px; }
+
+/*# sourceMappingURL=blog.css.map */

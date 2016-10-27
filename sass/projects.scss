@@ -1,0 +1,175 @@
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+$default: 'Montserrat', sans-serif;
+
+//color palette 
+$pink: #EE3A8C;
+$gray: #B9BDC0;
+$lightGray: #9c9c97;
+$reallyLightGray: #F0F0F0; 
+
+* {
+    vertical-align: baseline;
+    background: transparent;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+}
+
+@mixin transition() {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	 -o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+body {
+	font-family: $default;
+	text-align: center;
+	h3 {
+			font-size: 30px;
+		}
+	h1 {
+		font-size: 35px;		
+	}
+	h2 {
+		font-size: 20px;
+	}
+
+	/* For devices larger than 400px */
+	// @media (min-width: 400px) {
+ //  		nav {
+ //    		width: 85%;
+ //    		padding: 0; }
+	// }
+
+	// .mobile-menu {
+	// 	display: none;
+	// 	position: fixed;
+	// 	z-index: 9998;
+	// 	width: 100%;
+	// 	nav {
+	// 		ul {
+	// 		position: fixed;
+	// 		@include transition();
+	// 		background-color: $gray;
+	// 		width: 100%;
+	// 		-webkit-transform: translateY(-100%);
+	// 		-moz-transform: translateY(-100%);
+	// 		-o-transform: translateY(-100%);
+	// 		transform: translateY(-100%);
+
+	// 		li {
+	// 			width: 100%;
+	// 			text-align:center;
+
+	// 			// a {
+	// 			// 	@include font(700, $body, 1em);
+	// 			// 	cursor: pointer;
+	// 			// 	cursor: hand;
+	// 			// 	display: block;
+	// 			// 	width: 100%;
+	// 			// 	padding: 12px;
+
+	// 			// }
+
+	// 			// &:hover {
+	// 			// 	background-color: darken($black, 5%);
+	// 			// }
+
+	// 			// a.active {
+	// 			// 	background-color: darken($black, 5%);
+	// 			// }
+
+	// 			// }
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+
+	nav {
+			//background-color: transparent;
+			//opacity: 0.1;
+			//position: fixed;
+			background: linear-gradient(to bottom, $lightGray, transparent);
+			.name-logo {
+				color: $pink;
+				font-size: 25px;
+				//text-shadow: 1px 1px black;
+				padding-left: 2%;
+				&:hover {
+					opacity: 0.5;
+				}
+			}
+			text-align: left;
+			position: fixed;
+			width: 100%;
+			left: 0;
+			top: 0;
+			z-index: 100;
+			border-top: 0;
+
+		}
+	.intro{
+		img {
+			width: 100%;
+			height: 500px;
+		}
+	}
+	p{
+		padding: 20px;
+	}
+
+// for lab.html page
+
+	.proj_info {
+		.fsm_img{
+		padding-top: 40px;
+    	padding-bottom: 40px;
+		}	
+	}
+	.cras {
+		img{
+			border: 3px solid;
+			width: 50%;
+		}
+	}
+
+// for aiProgramming.html page
+	.projects{
+		img {
+			padding: 40px;
+			border: 2px;
+			border-radius: 50px;
+		}
+	}
+
+
+	footer {
+		background-color: $gray;
+		width: 100%;
+		height: 100px;
+		ul {
+			text-align: center;
+			padding-top: 3px;
+			li {
+				display: inline-block;
+				font-size: 30px;
+				margin: 3px;
+				&:hover {
+					opacity: 0.5;
+				}
+				a {
+					color: $pink;
+				}
+			}
+		}
+		.copyright{
+			text-align: center;
+		}
+	}
+
+
+}
