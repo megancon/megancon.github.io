@@ -225,5 +225,18 @@ body {
     body .about-section .info p {
       padding: 2%;
       text-align: center; } }
+@media screen and (max-width: 700) {
+  body .projects-section ul li {
+    display: block;
+    font-size: 20px; }
+    body .projects-section ul li img {
+      height: 15px;
+      weight: 15px; } }
+@media screen and (max-width: 570) {
+  body .home-section .home-text h2 {
+    top: 55%; } }
+@media screen and (max-height: 500px) {
+  body .home-section .home-text h2 {
+    top: 55%; } }
 
 /*# sourceMappingURL=style.css.map */
