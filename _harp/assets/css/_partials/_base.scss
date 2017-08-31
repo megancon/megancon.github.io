@@ -14,7 +14,9 @@ body{
   background: $light-gray;
   color: $pink;
   height: 100%;
+  overflow-x: hidden;
 }
+
 p {
   color: black;
 }

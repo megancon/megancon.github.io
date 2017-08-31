@@ -10,6 +10,10 @@
 	margin-top: 0px;
 	background-color: white;
 	text-align: center;
+
+	> .container {
+		padding-top: 0;
+	}
 }
 .header_photo{
 	img{
