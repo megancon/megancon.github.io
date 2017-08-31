@@ -1,0 +1,41 @@
+//fonts
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+$default: 'Montserrat', sans-serif;
+
+//color palette 
+$pink: #EE3A8C;
+$gray: #B9BDC0;
+$light-gray: #c1c1be;
+
+$spacer: 20px;
+
+body{
+  font-family: $default;
+  background: $light-gray;
+  color: $pink;
+  height: 100%;
+}
+p {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: all linear .2s;
+
+  &:hover {
+    color: $gray;
+    text-decoration: none;
+  }
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: $spacer;
+
+  @media (min-width: 500px) {
+    padding: ($spacer * 2);
+  }
+}

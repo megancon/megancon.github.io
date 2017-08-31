@@ -1,0 +1,37 @@
+//color palette 
+// $pink: #EE3A8C;
+// $gray: #B9BDC0;
+// $lightGray: #9c9c97;
+// $reallyLightGray: #F0F0F0;
+
+.header {
+	display: flex;
+  	flex-direction: column;
+  	text-align: center;
+  	align: center;
+
+  	@media (min-width: 500px){
+    	padding: ($spacer * 2);
+    	flex-direction: row;
+    	justify-content: space-between;
+    	text-align: left;
+    	// align-items: flex-start
+    }
+
+   	&_intro {
+		font-size: 1.5em;
+   	}
+   	&_title{
+   		font-size: 3em;
+		color: $pink;
+   	}
+   	img {
+   		border-radius: 25px;
+   	}
+}
+  	
+
+	
+
+	
+
