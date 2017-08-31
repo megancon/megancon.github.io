@@ -6,12 +6,12 @@
 
 .header {
 	display: flex;
-  	flex-direction: column;
-  	text-align: center;
-  	align: center;
+  flex-direction: column;
+  text-align: center;
+  align: center;
 
-  	@media (min-width: 500px){
-    	padding: ($spacer * 2);
+  @media (min-width: 500px){
+    	padding: 0px;
     	flex-direction: row;
     	justify-content: space-between;
     	text-align: left;
@@ -23,7 +23,7 @@
    	}
    	&_title{
    		font-size: 3em;
-		color: $pink;
+		  color: $pink;
    	}
    	img {
    		border-radius: 25px;

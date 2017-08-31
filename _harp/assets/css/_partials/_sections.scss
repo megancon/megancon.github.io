@@ -4,20 +4,75 @@
 
 .curved-divider {
   background-color: $light-gray;
-  fill: white;
+  fill: $off-white;
   border: none;
 }
 .about{
-	margin-top: 0px;
-	background-color: white;
-	text-align: center;
+	// background-color: $off-white;
+	// text-align: center;
 
 	> .container {
 		padding-top: 0;
 	}
-}
-.header_photo{
-	img{
-		border-radius: 25px;
+
+	&_info{
+		display: flex;
+  		flex-direction: column;
+  		text-align: center;
+  		align: center;
+  		padding: $spacer;
+
+  		@media (min-width: 500px){
+    		flex-direction: row;
+    		justify-content: space-between;
+    		text-align: left;
+    	}
+
+    	img{
+    		height: 250px;
+    		border-radius: 25px;
+    	}
 	}
+
+	&_text{
+   		padding-right: 5%;
+   	}
 }
+
+/**
+ * PROJECTS
+ */
+ .projects{
+
+ 	> .container{
+ 		padding-top: 0px;
+ 	}
+
+ 	&_info{
+		display: flex;
+  		flex-direction: column;
+  		text-align: center;
+  		align: center;
+  		padding: $spacer;
+
+  		@media (min-width: 500px){
+    		flex-direction: row;
+    		justify-content: space-between;
+    		text-align: left;
+    	}
+    }
+ }
+/**
+ * PROJECTS
+ */
+ .footer{
+ 	background-color: $light-gray; 
+ 	display: flex;
+ 	i {
+ 		color: $pink;
+ 	}
+ 	p {
+ 		padding-left: 4px;
+ 		font-weight: 400;
+ 	}
+ }

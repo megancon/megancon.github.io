@@ -6,6 +6,7 @@ $default: 'Montserrat', sans-serif;
 $pink: #EE3A8C;
 $gray: #B9BDC0;
 $light-gray: #c1c1be;
+$off-white: #fafafa;
 
 $spacer: 20px;
 
@@ -15,12 +16,20 @@ body{
   color: $pink;
   height: 100%;
   overflow-x: hidden;
+  margin: 0px;
+}
+
+h1{
+  font-size: 2em;
 }
 
 p {
   color: black;
 }
-
+section{
+  background-color: $off-white;
+  text-align: center;
+}
 a {
   text-decoration: none;
   color: black;
@@ -38,6 +47,6 @@ a {
   padding: $spacer;
 
   @media (min-width: 500px) {
-    padding: ($spacer * 2);
+    padding: 0px;
   }
 }
