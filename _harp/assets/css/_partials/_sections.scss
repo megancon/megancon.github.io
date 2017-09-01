@@ -63,7 +63,25 @@ section{
  /**
  * CONTACT
  */
-
+.contact-content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align: center;
+	padding: $spacer;
+}
+.contact_links{
+	list-style: none;
+	display: flex;
+	margin: auto;
+	a{
+		color: black;
+	}
+	li{
+		padding: $spacer;
+		font-size: 3em;
+	}
+}
 
 /**
  * FOOTER
