@@ -26,27 +26,14 @@ h1{
 p {
   color: black;
 }
-section{
-  background-color: $off-white;
-  text-align: center;
-}
+
 a {
   text-decoration: none;
-  color: black;
+  color: $pink;
   transition: all linear .2s;
 
   &:hover {
     color: $gray;
     text-decoration: none;
-  }
-}
-
-.container {
-  max-width: 860px;
-  margin: 0 auto;
-  padding: $spacer;
-
-  @media (min-width: 500px) {
-    padding: 0px;
   }
 }

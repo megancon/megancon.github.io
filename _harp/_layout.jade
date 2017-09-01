@@ -9,7 +9,7 @@ html
 				!= partial("_partials/topdivider")
 				.container
 					h1.section-title About Me
-					.about_info
+					.content
 						!= yield
 						.about_photo
 							img(src="assets/images/me.jpg" alt="me holding a french pastry in front of my face")
@@ -18,8 +18,15 @@ html
 				!= partial("_partials/topdivider")
 				.container
 					h1.section-title My Projects
-					.projects_info
+					.content
 						!=partial("_partials/projects")
 			!= partial("_partials/bottomdivider")
+			section.contact
+				!=partial("_partials/topdivider")
+				.container
+					h1.section-title Contact
+					.content
+						!=partial("_partials/contact")
+			!=partial("_partials/bottomdivider")
 			section.footer
 				!=partial("_partials/footer")

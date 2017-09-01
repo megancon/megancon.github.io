@@ -1,38 +1,54 @@
 /**
- * ABOUT
+ * ALL SECTIONS
  */
+section{
+  background-color: $off-white;
+  text-align: center;
+}
+.section-title{
+	margin: 0px;
+}
 
 .curved-divider {
   background-color: $light-gray;
   fill: $off-white;
   border: none;
 }
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: $spacer;
+
+  @media (min-width: 500px) {
+    padding: 0px;
+  }
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align: center;
+	padding: $spacer;
+	
+	@media (min-width: 500px){
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: left;
+	}
+}
+
+/**
+ * ABOUT
+ */
+
 .about{
-	// background-color: $off-white;
-	// text-align: center;
 
-	> .container {
-		padding-top: 0;
-	}
-
-	&_info{
-		display: flex;
-  		flex-direction: column;
-  		text-align: center;
-  		align: center;
-  		padding: $spacer;
-
-  		@media (min-width: 500px){
-    		flex-direction: row;
-    		justify-content: space-between;
-    		text-align: left;
-    	}
-
-    	img{
-    		height: 250px;
-    		border-radius: 25px;
-    	}
-	}
+    img{
+    	height: 250px;
+    	border-radius: 25px;
+    }
 
 	&_text{
    		padding-right: 5%;
@@ -42,28 +58,15 @@
 /**
  * PROJECTS
  */
- .projects{
 
- 	> .container{
- 		padding-top: 0px;
- 	}
 
- 	&_info{
-		display: flex;
-  		flex-direction: column;
-  		text-align: center;
-  		align: center;
-  		padding: $spacer;
+ /**
+ * CONTACT
+ */
 
-  		@media (min-width: 500px){
-    		flex-direction: row;
-    		justify-content: space-between;
-    		text-align: left;
-    	}
-    }
- }
+
 /**
- * PROJECTS
+ * FOOTER
  */
  .footer{
  	background-color: $light-gray; 
