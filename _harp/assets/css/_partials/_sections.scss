@@ -62,12 +62,14 @@ section{
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	align: center;
 	padding: $spacer;
 }
 .project_links{
 	list-style: none;
 	display: flex;
 	margin: auto;
+	text-align: center;
 	li{
 		padding: $spacer;
 	}
