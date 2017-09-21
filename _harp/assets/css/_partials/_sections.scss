@@ -60,14 +60,14 @@ section{
  */
  .project-content {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	text-align: center;
-	align: center;
 	padding: $spacer;
 }
 .project_links{
 	list-style: none;
 	display: flex;
+	flex-direction: row;
 	margin: auto;
 	text-align: center;
 	li{
@@ -120,9 +120,14 @@ section{
 	align: center;
 	padding: $spacer;
 }
+.contact_section{
+	display:flex;
+ 	flex-direction: row;
+ }
 .contact_links{
 	list-style: none;
 	display: flex;
+	flex-direction: row;
 	margin: auto;
 	a{
 		color: black;
